@@ -621,4 +621,3 @@ app.post("/otp1/:email/:password",async function(req,res){
 })
 
 app.listen(process.env.PORT || 3000);
-
