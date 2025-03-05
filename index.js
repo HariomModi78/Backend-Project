@@ -559,7 +559,7 @@ app.get("/printoutOrder/:userid",async function(req,res){
         let user  = await customerDataBase.findOne({_id:req.params.userid});
         let printout;
        
-        if(req.params.userid== "67c59704d33bafc6a93805f1"){
+        if(user.mobileNumber== "7898488935"){
             printout = await printoutDataBase.find();
         }
         else{
